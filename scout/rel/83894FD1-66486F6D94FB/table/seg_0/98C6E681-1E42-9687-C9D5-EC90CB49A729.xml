@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="98C6E681-1E42-9687-C9D5-EC90CB49A729" name="SECCION_WEB">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>4252B4ED-A31E-B1B8-A6EB-917F841F6746</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="url" id="06F7229E-5E61-71A5-6ED5-FEE2BD41375C">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>72085414-3239-8B4D-BA91-74C9E4F433D2</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_seccion" id="21CEB366-2E50-CF1B-2FBC-4F4CE645E814">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>3BB6547D-FDC1-E363-DB76-60B137B0296A</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRUPO_SCOUT_id_grupo1" id="530AD602-CFD2-BEF5-5C74-EE48A09C814E">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>7301ED34-6132-0FD7-9C70-4AD02ED44D5F</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="058045FF-9AAE-9534-B701-5B597EFE4C29" name="SECCION_WEB_PK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>F9943405-3B83-D0D4-4FE6-BD90B89838E4</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06F7229E-5E61-71A5-6ED5-FEE2BD41375C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A765167A-A72A-E60D-4807-000C81B766A8" name="SECCION_WEB__IDX">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B938F26C-D1B6-F99A-0620-6894B9E7269F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="530AD602-CFD2-BEF5-5C74-EE48A09C814E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

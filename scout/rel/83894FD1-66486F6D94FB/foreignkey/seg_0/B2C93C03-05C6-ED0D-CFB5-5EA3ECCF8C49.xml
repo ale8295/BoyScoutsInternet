@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B2C93C03-05C6-ED0D-CFB5-5EA3ECCF8C49" containerWithKeyObject="9431B371-0310-D536-F2F0-F933C8116C1D" localFKIndex="63155128-B742-1BA6-843C-63116CB49062" name="SCOUTER_SOCIOS_FK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>AB1776A6-5EF2-7BBB-9314-F648333143D8</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<referredTableLongName>SOCIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E4BC2BF0-0342-6712-9C54-8DD33987D921</referredTableID>
+<keyObject>01349FAF-0174-B2BA-8457-E6645CCAE25F</keyObject>
+<referredKeyID>01349FAF-0174-B2BA-8457-E6645CCAE25F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_educando</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

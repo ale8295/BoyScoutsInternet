@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4AD2FF9A-35E0-F215-A3DE-ED4295898677" name="SCOUTER">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:49:29 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>49798ECE-C23C-41C4-F6C9-51EBEA8C9571</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cargo" id="F3F6F524-13E4-4382-4FDA-CB6E3C9D9D53">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:49:41 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AF029C8D-965B-0DFE-4D58-8ADF887C6A4E" name="SCOUTER PKv1">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:13:36 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+<identifier id="CDB18F87-87C6-1F03-51D7-0AB49C5DBEB2" name="Key_2">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:20:47 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="45EB137F-C1DF-183F-474F-F895E478861A" name="GRUPO_SCOUT">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:18:24 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_grupo" id="CAC1B363-A20F-039B-5BF0-5C8C7C668CCC">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 14:03:30 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_grupo" id="2E95CA52-6051-8B7E-0C97-E27F197116B0">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 14:03:29 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="url" id="9E721DBE-3F69-4182-357F-14ECEA61AD02">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:39:11 UTC</createdTime>
+<generatorID>B938F26C-D1B6-F99A-0620-6894B9E7269F</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>72085414-3239-8B4D-BA91-74C9E4F433D2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7BD90624-226F-0553-6CEF-10677FEC70D5" name="GRUPO_SCOUT PK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 14:03:54 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CAC1B363-A20F-039B-5BF0-5C8C7C668CCC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

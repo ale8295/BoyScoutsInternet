@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4252B4ED-A31E-B1B8-A6EB-917F841F6746" name="SECCION WEB">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:42:22 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="url" id="72085414-3239-8B4D-BA91-74C9E4F433D2">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:42:37 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_seccion" id="3BB6547D-FDC1-E363-DB76-60B137B0296A">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 12:18:00 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_grupo" id="7301ED34-6132-0FD7-9C70-4AD02ED44D5F">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:38:17 UTC</createdTime>
+<generatorID>B938F26C-D1B6-F99A-0620-6894B9E7269F</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CAC1B363-A20F-039B-5BF0-5C8C7C668CCC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F9943405-3B83-D0D4-4FE6-BD90B89838E4" name="SECCION WEB PK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:42:57 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>72085414-3239-8B4D-BA91-74C9E4F433D2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

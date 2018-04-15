@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C5A309C9-C894-2A7A-CBD4-65E6038F6162" name="DOCUMENTACION">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>912F9EA7-3860-97D9-EEA7-0AB40790F9B5</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_documento" id="4BA02D22-837A-A266-0D38-C278EA44DEA5">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>292E42DE-F4CC-71A7-1DB1-FCE9FDB7649F</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="A0E5D321-C86E-CE0C-BA4B-00EF248D2406">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>5F3A1D52-D6A3-12F9-623C-3AF9DCE13D3A</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="url" id="A4A93856-D64B-8C85-95C3-51BA13EE4286">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>0AA16A8F-2B60-C175-E164-F025182DF0F1</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comentario" id="361B9918-3B7D-D3EE-AF7A-2E789DACD1AA">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>B12E2DAA-B585-6FD1-CD5B-8F77612B566F</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOCIOS_id_socio" id="A106C708-F675-7EB0-96C8-F3C2EAD4F821">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>04C86254-FB16-5952-59EB-6A1AC1E09C71</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C37DD501-DC01-9251-84AA-AD69A877993A" referredColumn="BBCB6A45-3C35-82F3-1B2A-A86CEA7DD1BB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="89CE4B17-B608-EA12-902B-A227CAE66C24" name="DOCUMENTACION_PK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>4D8CD6CE-1688-8EC3-AD6D-6703655CE66E</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BA02D22-837A-A266-0D38-C278EA44DEA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A574B63B-DA6C-4B54-B3DE-A54B3920C222" name="DOCUMENTACION__IDX">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>A6D35064-4FC8-51D7-1A12-13756A09A768</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A106C708-F675-7EB0-96C8-F3C2EAD4F821"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5090D424-3DF1-D12E-4B21-C7D20F0293AB" name="DOCUMENTACION_SOCIOS_FK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>A6D35064-4FC8-51D7-1A12-13756A09A768</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A106C708-F675-7EB0-96C8-F3C2EAD4F821"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

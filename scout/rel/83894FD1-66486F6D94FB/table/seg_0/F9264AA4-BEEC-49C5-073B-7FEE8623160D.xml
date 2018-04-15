@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F9264AA4-BEEC-49C5-073B-7FEE8623160D" name="PRODUCTO">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>B3C1A07F-CDDD-F34B-A875-803C9A3A20CF</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_objeto" id="0D0F83A3-C8A8-5D35-193E-B4BBBE9E5E07">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>D24BB37F-BE66-596C-D69E-D78D65117E3C</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_objeto" id="FA940EF3-D74B-DAD1-04C8-B06100312215">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>3796C751-1824-39A0-D20E-2C9C117BF6A8</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock" id="489F9BAD-55C5-3710-216A-89E47477D84E">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>2F7339C3-1907-F1CC-9BF1-2C0FDC4A9477</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pvp_objeto" id="34988AA0-3C70-C018-F461-BA5D835DA714">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>0FEE51AF-A537-8355-F009-4BD1BBA415A9</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_producto" id="85208B3F-4123-E41A-8C98-B93C2C2FA1C4">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>DEED5D42-3AED-9753-947C-9A2459DD5C5F</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRUPO_SCOUT_id_grupo1" id="99D90A23-A849-6402-E81B-0C8611BC12E9">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>8F3DF341-1B4D-AF37-4715-EBCE00867475</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="408C24A3-0A3C-1F03-D188-8E24BD83FE37" referredColumn="FBDD9031-3427-B8EE-ECA3-AC3272031CAD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24DC8FE3-6E22-B490-F562-76C8A3BEF3F5" name="PRODUCTO_PK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>8916144F-F509-D16D-1720-55196B281E9F</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99D90A23-A849-6402-E81B-0C8611BC12E9"/>
+<colUsage columnID="85208B3F-4123-E41A-8C98-B93C2C2FA1C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2DF707B-23F5-E765-8925-36D2ABA5014D" name="PRODUCTO_GRUPO_SCOUT_FK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>B01184B5-1CC3-2880-5DD4-BC82721DA331</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99D90A23-A849-6402-E81B-0C8611BC12E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F7775DF-77B6-0966-15BC-45831F3CAF4C" name="RESPONSABLE_LEGAL">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>A59BCAF3-9573-C8D7-3A48-C765F745000E</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="dni" id="13647B41-325F-D20B-B479-D6ED2C158DF2">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>9520F75D-851C-ACBB-89FC-0D10EF23EDDF</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="1543625A-CDF7-D81D-DF2D-4E04C4A2D420">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>E821B002-35F7-B4AA-380A-3785E813A6A0</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos" id="B4A8D9EB-5DB3-C4A9-A477-62D5DF1B7FBB">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>4D48775F-B1E8-9C4C-8742-C7EC12C99A11</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="200E9FB8-7F5B-8ED8-B1CF-BA407CD74B80">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>1FEC0D6F-F9F7-DB73-FE04-23D2C38A6EDE</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70D3BCAD-ACAA-4582-70B8-517071FD105E" name="RESPONSABLE_LEGAL_PK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>08671953-AA21-D7AB-3FBB-DB9356E58643</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13647B41-325F-D20B-B479-D6ED2C158DF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C7E7916-26E4-D731-7E5F-873C66E8A142" name="TUTOR">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<generatorID>FD29C0C2-4A47-7DD0-B009-47E1F654FB53</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="COORDINA" directorySegmentName="seg_0" id="89FB13F8-9040-22D1-F26A-095C55A2701C">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 12:12:21 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<sourcePk>AF029C8D-965B-0DFE-4D58-8ADF887C6A4E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>coordinado por</nameOnSource>
+<nameOnTarget>coordina</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4AD2FF9A-35E0-F215-A3DE-ED4295898677</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>45EB137F-C1DF-183F-474F-F895E478861A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

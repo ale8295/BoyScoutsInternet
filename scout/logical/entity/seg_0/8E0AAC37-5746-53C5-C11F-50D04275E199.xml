@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E0AAC37-5746-53C5-C11F-50D04275E199" name="PEDIDOS">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:13:09 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_pedido" id="E0A074EA-5984-E305-69D7-824A56141C64">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:13:16 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="objeto" id="4AB418EA-9BF6-5648-AACA-01648D6C815A">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:13:29 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad" id="EF9299C1-4B90-1862-32FB-C8B1FEEBDC5F">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:14:22 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="9EC973CA-629F-1465-94D0-A85CD899FC04">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:14:26 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="resguardo" id="CDBBDE54-15C8-6844-EB2D-A29CC99BEB95">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:14:30 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_grupo" id="F95EEB51-C356-FDF6-6290-531F9701AFA8">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 14:13:33 UTC</createdTime>
+<generatorID>BB894C36-E5C5-7FB2-E7BF-CA80B3320083</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<referedAttribute>8F3DF341-1B4D-AF37-4715-EBCE00867475</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_socio" id="5B959727-7C99-4134-0501-02B0278E23B4">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:43:09 UTC</createdTime>
+<generatorID>03112EC9-8D74-A24F-A882-C859C812B22C</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<referedAttribute>594FAFAE-A960-219A-77CA-B0B0B89CC4C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_producto" id="996AADAA-F8F4-AF52-C869-B55D67301CBB">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 13:47:11 UTC</createdTime>
+<generatorID>BB894C36-E5C5-7FB2-E7BF-CA80B3320083</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<referedAttribute>DEED5D42-3AED-9753-947C-9A2459DD5C5F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D6A6E3F3-2911-D5A9-CE21-4DA857955C89" name="PEDIDOS PK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 15:20:16 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E0A074EA-5984-E305-69D7-824A56141C64</attributeRef>
+<attributeRef>F95EEB51-C356-FDF6-6290-531F9701AFA8</attributeRef>
+<attributeRef>5B959727-7C99-4134-0501-02B0278E23B4</attributeRef>
+<attributeRef>996AADAA-F8F4-AF52-C869-B55D67301CBB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

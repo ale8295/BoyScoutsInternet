@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="scout" id="9F1C9493-0C5E-2F47-2029-011B7D7A4FA3" version="3.5">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 09:39:38 UTC</createdTime>
+<ownerDesignName>SCOUTS</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9F1C9493-0C5E-2F47-2029-011B7D7A4FA3</designId>
+</OSDM_Design>

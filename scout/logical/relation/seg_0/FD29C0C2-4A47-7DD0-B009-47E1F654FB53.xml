@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TUTOR" directorySegmentName="seg_0" id="FD29C0C2-4A47-7DD0-B009-47E1F654FB53">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 10:37:55 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<sourcePk>69E31C4D-A66A-618F-5F7F-9CCCE70D884E</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>personal a cargo</nameOnSource>
+<nameOnTarget>es tutor de</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>49798ECE-C23C-41C4-F6C9-51EBEA8C9571</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A59BCAF3-9573-C8D7-3A48-C765F745000E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

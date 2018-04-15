@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A1163B3E-BB73-4369-478D-7EB7AF2B1C9B" name="CUOTAS">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>2408F0D5-16D4-7B94-FA6F-DEB9F55322BA</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_codigo" id="0EEE7AEA-B29B-9770-71C8-3605189C3F30">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>84B4CB6E-928F-E15B-5AA5-3A4E9CBE7EBE</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="0E755659-96DC-6A65-64FD-60F0265EE5C3">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>715B0476-3DAB-54B1-7581-D530D2F6FA3B</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_pago" id="604C3FED-3152-1D12-F6C3-CDC1E174B237">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>7F2A35AC-34BD-61EA-9BE0-761A80B16DF4</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SOCIOS_id_socio" id="38697EA4-4B1A-90F1-9ECF-A4EB3D8328FA">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>527922B1-8CE3-8644-F48A-369F1D8BF774</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BAB8E61-D457-307A-E450-5EDF7C5FC3AB" referredColumn="BBCB6A45-3C35-82F3-1B2A-A86CEA7DD1BB"/>
+</associations>
+</Column>
+<Column name="descripcion" id="DE73BD38-FD0A-2A64-7887-FAC37905F507">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>7C74184B-6F7F-CEA8-DF73-B7185F1B9CAE</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0E4C9CD-38BC-14F8-E928-165A82038E77" name="CUOTAS_PK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>499AB2A1-96CC-3105-F665-4305BC14432E</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EEE7AEA-B29B-9770-71C8-3605189C3F30"/>
+<colUsage columnID="38697EA4-4B1A-90F1-9ECF-A4EB3D8328FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4E554709-5493-6018-11AB-769609BBE460" name="CUOTAS_SOCIOS_FK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>2678F41C-BBB1-070E-2FE1-6914052D736C</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="38697EA4-4B1A-90F1-9ECF-A4EB3D8328FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="263B504C-A206-EAAC-A314-1F59F8D13996" name="PEDIDOS">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>8E0AAC37-5746-53C5-C11F-50D04275E199</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_pedido" id="35BE7E5F-4BC9-2C31-ED80-2893FC5572A8">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>E0A074EA-5984-E305-69D7-824A56141C64</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="objeto" id="775596C0-6DB5-D01E-B8CA-EC2FF6994603">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>4AB418EA-9BF6-5648-AACA-01648D6C815A</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cantidad" id="BF078602-2164-51D4-58AE-A3CA267B8DDB">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>EF9299C1-4B90-1862-32FB-C8B1FEEBDC5F</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estado" id="57567FA4-9513-0E80-9DC7-393ED6A3E8DA">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>9EC973CA-629F-1465-94D0-A85CD899FC04</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resguardo" id="4824FF52-3EA0-6D8C-D566-2B792B98A7A5">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>CDBBDE54-15C8-6844-EB2D-A29CC99BEB95</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUCTO_GRUPO_SCOUT_id_grupo1" id="E1353D9D-A653-D399-4E7D-8A056BDD12C4">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>F95EEB51-C356-FDF6-6290-531F9701AFA8</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A1757CA-5784-842A-0C30-A41DCB532CBB" referredColumn="99D90A23-A849-6402-E81B-0C8611BC12E9"/>
+</associations>
+</Column>
+<Column name="SOCIOS_id_socio" id="C962E314-194D-EB54-A698-0BC830C2AA24">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>5B959727-7C99-4134-0501-02B0278E23B4</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="847D0CD7-7295-0293-A6C5-272A9418AF1B" referredColumn="BBCB6A45-3C35-82F3-1B2A-A86CEA7DD1BB"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_id_producto" id="5E922439-AB19-6D3D-4AC3-15FFB832301B">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>996AADAA-F8F4-AF52-C869-B55D67301CBB</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A1757CA-5784-842A-0C30-A41DCB532CBB" referredColumn="85208B3F-4123-E41A-8C98-B93C2C2FA1C4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FEE80ADB-3E8B-EEB8-F532-54020855BC08" name="PEDIDOS_PK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>D6A6E3F3-2911-D5A9-CE21-4DA857955C89</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35BE7E5F-4BC9-2C31-ED80-2893FC5572A8"/>
+<colUsage columnID="E1353D9D-A653-D399-4E7D-8A056BDD12C4"/>
+<colUsage columnID="5E922439-AB19-6D3D-4AC3-15FFB832301B"/>
+<colUsage columnID="C962E314-194D-EB54-A698-0BC830C2AA24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33088F34-F9FE-E1B3-9F8B-F688EC45D704" name="PEDIDOS_PRODUCTO_FK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>BB894C36-E5C5-7FB2-E7BF-CA80B3320083</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E1353D9D-A653-D399-4E7D-8A056BDD12C4"/>
+<colUsage columnID="5E922439-AB19-6D3D-4AC3-15FFB832301B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CE42CEE-663A-12DA-3B72-C358868B998D" name="PEDIDOS_SOCIOS_FK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:04:12 UTC</createdTime>
+<generatorID>03112EC9-8D74-A24F-A882-C859C812B22C</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C962E314-194D-EB54-A698-0BC830C2AA24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

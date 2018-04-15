@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9431B371-0310-D536-F2F0-F933C8116C1D" name="SCOUTER">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>4AD2FF9A-35E0-F215-A3DE-ED4295898677</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_educando" id="DE4CAD61-074A-BD4E-56E4-7DD7B258DF1B">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>594FAFAE-A960-219A-77CA-B0B0B89CC4C7</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2C93C03-05C6-ED0D-CFB5-5EA3ECCF8C49" referredColumn="BBCB6A45-3C35-82F3-1B2A-A86CEA7DD1BB"/>
+</associations>
+</Column>
+<Column name="cargo" id="6ABFE048-6177-E377-90BA-965B8255C6B2">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>F3F6F524-13E4-4382-4FDA-CB6E3C9D9D53</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="119DB719-2F96-680F-BACD-9333003F4B7B" name="SCOUTER_PK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>69E31C4D-A66A-618F-5F7F-9CCCE70D884E</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE4CAD61-074A-BD4E-56E4-7DD7B258DF1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FEBFDDA-A130-D4CF-0D75-A17CBFDB1B14" name="SCOUTER_PKv1">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>AF029C8D-965B-0DFE-4D58-8ADF887C6A4E</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="41CF85A8-2251-E8F9-F9AD-796B1F151337" name="SCOUTER__UN">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>CDB18F87-87C6-1F03-51D7-0AB49C5DBEB2</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="63155128-B742-1BA6-843C-63116CB49062" name="SCOUTER_SOCIOS_FK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 11:59:48 UTC</createdTime>
+<generatorID>AB1776A6-5EF2-7BBB-9314-F648333143D8</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE4CAD61-074A-BD4E-56E4-7DD7B258DF1B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

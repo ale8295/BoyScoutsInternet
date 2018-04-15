@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tiene permisos" directorySegmentName="seg_0" id="152B236F-6494-C6C8-7E64-B60575BA76CA">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 12:46:30 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<sourcePk>69E31C4D-A66A-618F-5F7F-9CCCE70D884E</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>puede</nameOnSource>
+<nameOnTarget>son de</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>49798ECE-C23C-41C4-F6C9-51EBEA8C9571</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A43F3061-1BA2-4DF8-BE2D-554B179761D6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

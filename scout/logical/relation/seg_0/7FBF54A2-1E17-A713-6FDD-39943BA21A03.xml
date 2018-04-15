@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tiene eventos" directorySegmentName="seg_0" id="7FBF54A2-1E17-A713-6FDD-39943BA21A03">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 12:52:17 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<sourcePk>F9943405-3B83-D0D4-4FE6-BD90B89838E4</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>tiene</nameOnSource>
+<nameOnTarget>son de seccion</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4252B4ED-A31E-B1B8-A6EB-917F841F6746</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B41D2532-D480-8D30-1960-43790E4627EE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

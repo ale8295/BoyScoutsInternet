@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AFF9B39A-8F42-B42B-16FD-735261E7FF7F" name="TUTOR">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOCIOS_id_socio" id="A22F69DA-C2E0-827D-9A99-212256FEC511">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="720E8BE9-C008-1D95-5D3D-CB0FCC4F77C7" referredColumn="BBCB6A45-3C35-82F3-1B2A-A86CEA7DD1BB"/>
+</associations>
+</Column>
+<Column name="RESPONSABLE_LEGAL_dni" id="773CDD74-271E-CA20-9697-53772089FD5E">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D1A4230E-83C5-140B-C741-AA7471E9B6DD" referredColumn="13647B41-325F-D20B-B479-D6ED2C158DF2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CD350C4-9199-0579-E1E1-4D3DBA4C4C62" name="TUTOR_PK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A22F69DA-C2E0-827D-9A99-212256FEC511"/>
+<colUsage columnID="773CDD74-271E-CA20-9697-53772089FD5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01205DD6-B950-D89A-9231-C869267F8553" name="FK_ASS_5">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<generatorID>FD29C0C2-4A47-7DD0-B009-47E1F654FB53</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A22F69DA-C2E0-827D-9A99-212256FEC511"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20195C94-B9F8-D802-8837-1E7D0E44C895" name="FK_ASS_6">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<generatorID>FD29C0C2-4A47-7DD0-B009-47E1F654FB53</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="773CDD74-271E-CA20-9697-53772089FD5E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

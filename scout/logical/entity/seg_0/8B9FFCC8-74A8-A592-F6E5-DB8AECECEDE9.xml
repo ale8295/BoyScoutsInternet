@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8B9FFCC8-74A8-A592-F6E5-DB8AECECEDE9" name="COMENTARIOS">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:50:17 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_comentario" id="7B6FB612-CA4B-FC9B-A536-0BBAA55CFDF1">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:53:47 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="C9E753D5-3C5E-C0BD-7F19-4FA5F6DB1935">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:53:07 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="C9B28E61-1FAE-EAC6-F89A-9E7993EA4345">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:54:04 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_socio" id="9B9AC0F4-8E69-566A-4DC6-2F0FF817C330">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:54:28 UTC</createdTime>
+<generatorID>ABB4C6ED-883E-C481-9CDE-0B7D41166870</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<referedAttribute>594FAFAE-A960-219A-77CA-B0B0B89CC4C7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_evento" id="A57BDF41-A6E4-1471-65D7-2A3FA75DFB1F">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:54:40 UTC</createdTime>
+<generatorID>440152CA-3619-67DD-E95C-7559A5B3D0A4</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<referedAttribute>F6C729ED-0AB6-0D7A-B5BC-FF8FFC8D31EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2025E3A6-5983-70ED-8098-97FB1D144F0A" name="COMENTARIOS PK">
+<createdBy>anton</createdBy>
+<createdTime>2017-12-14 10:53:58 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7B6FB612-CA4B-FC9B-A536-0BBAA55CFDF1</attributeRef>
+<attributeRef>9B9AC0F4-8E69-566A-4DC6-2F0FF817C330</attributeRef>
+<attributeRef>A57BDF41-A6E4-1471-65D7-2A3FA75DFB1F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

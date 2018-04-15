@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="281A1291-DA14-D8FD-F242-7195519C9BB8" name="asiste">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SOCIOS_id_socio" id="883B6FCD-5AB7-7EEC-FA37-283AFF5E8E80">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9CF168E-486A-2D99-437D-763AC58F7E21" referredColumn="BBCB6A45-3C35-82F3-1B2A-A86CEA7DD1BB"/>
+</associations>
+</Column>
+<Column name="EVENTOS_id_evento" id="D3E8D9D0-329B-73D3-7BA4-A0BC0F8ED596">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3DF6C0C7-9976-D422-821C-DC006A5A7566" referredColumn="3821636A-9884-0A6F-C14B-DBCFA36D393D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="170751A5-B67D-7612-C433-1E98EEFA5CEA" name="asiste_PK">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="883B6FCD-5AB7-7EEC-FA37-283AFF5E8E80"/>
+<colUsage columnID="D3E8D9D0-329B-73D3-7BA4-A0BC0F8ED596"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40514045-8896-F998-A1DB-66516E5DFE4E" name="FK_ASS_9">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<generatorID>7090B37D-5ED0-EEEF-92C7-C8D6FEE41FC9</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="883B6FCD-5AB7-7EEC-FA37-283AFF5E8E80"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27892891-CEEB-E24D-DD15-8C169BC63A1E" name="FK_ASS_10">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 14:08:05 UTC</createdTime>
+<generatorID>7090B37D-5ED0-EEEF-92C7-C8D6FEE41FC9</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3E8D9D0-329B-73D3-7BA4-A0BC0F8ED596"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

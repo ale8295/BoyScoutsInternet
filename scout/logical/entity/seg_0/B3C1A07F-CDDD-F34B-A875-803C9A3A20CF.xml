@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B3C1A07F-CDDD-F34B-A875-803C9A3A20CF" name="PRODUCTO">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 09:56:45 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_producto" id="DEED5D42-3AED-9753-947C-9A2459DD5C5F">
+<createdBy>Carli</createdBy>
+<createdTime>2018-03-20 13:47:03 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_objeto" id="3796C751-1824-39A0-D20E-2C9C117BF6A8">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 09:57:15 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="stock" id="2F7339C3-1907-F1CC-9BF1-2C0FDC4A9477">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 09:57:30 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pvp_objeto" id="0FEE51AF-A537-8355-F009-4BD1BBA415A9">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 09:57:50 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_grupo" id="8F3DF341-1B4D-AF37-4715-EBCE00867475">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 14:13:04 UTC</createdTime>
+<generatorID>B01184B5-1CC3-2880-5DD4-BC82721DA331</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<referedAttribute>CAC1B363-A20F-039B-5BF0-5C8C7C668CCC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8916144F-F509-D16D-1720-55196B281E9F" name="TIENDA PK">
+<createdBy>Carliasus</createdBy>
+<createdTime>2017-11-17 14:10:47 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8F3DF341-1B4D-AF37-4715-EBCE00867475</attributeRef>
+<attributeRef>DEED5D42-3AED-9753-947C-9A2459DD5C5F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
