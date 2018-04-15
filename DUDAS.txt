@@ -1,0 +1,4 @@
+-Relación con parte opcional
+-Relación de debilidad
+-Preguntar si está bien la subentidad Scouter
+-Como crear una base de datos especifica para el proyecto
