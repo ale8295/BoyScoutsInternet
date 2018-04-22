@@ -12,7 +12,7 @@ import javax.persistence.*;
  *
  * @author pepe
  */
-@Entity
+@Embeddable
 public class Permisos implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -24,8 +24,6 @@ public class Permisos implements Serializable {
     private boolean subirDoc;
     private boolean adminTienda;
     private boolean gestion;
-    @ManyToOne
-    private Socios socio;
 
     public Long getId_permiso() {
         return id_permiso;
@@ -74,17 +72,7 @@ public class Permisos implements Serializable {
     public void setGestion(boolean gestion) {
         this.gestion = gestion;
     }
-
-    public Socios getSocio() {
-        return socio;
-    }
-
-    public void setSocio(Socios socio) {
-        this.socio = socio;
-    }
-    
-    
-    
+ 
     @Override
     public int hashCode() {
         int hash = 0;

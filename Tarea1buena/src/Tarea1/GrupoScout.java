@@ -30,6 +30,11 @@ public class GrupoScout implements Serializable {
     @OneToOne
     private SeccionWeb seccionWeb;
     
+    @Embedded 
+    @Column (nullable = true)
+    @OneToMany
+    private List<Registro_Grupo> listRegistros;
+    
     public Long getId_grupo() {
         return id_grupo;
     }
@@ -76,6 +81,14 @@ public class GrupoScout implements Serializable {
 
     public void setSeccionWeb(SeccionWeb seccionWeb) {
         this.seccionWeb = seccionWeb;
+    }
+
+    public List<Registro_Grupo> getListRegistros() {
+        return listRegistros;
+    }
+
+    public void setListRegistros(List<Registro_Grupo> listRegistros) {
+        this.listRegistros = listRegistros;
     }
 
     @Override

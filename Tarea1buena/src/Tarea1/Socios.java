@@ -29,17 +29,34 @@ public class Socios implements Serializable {
     private Date fecha_ingreso;
     @Temporal (TemporalType.DATE)
     private Date fecha_baja;
-    @ManyToMany
-    private List<RespLegal> listRL;
+    
+    @Column (nullable = true)
+    @ManyToOne
+    private RespLegal respLegal;
+    
+    @Embedded
     @OneToMany
     private List<Cuotas> listCuotas;
+    
+    @Embedded
     @OneToMany
     private List<Permisos> listPermisos;
+    
+    @Embedded 
+    @Column (nullable = true)
     @OneToMany
     private List<Comentarios> listComentarios;
+    
+    @Column (nullable = true)
     @ManyToMany
     private List<Eventos> listEventos;
-    @OneToOne (fetch = FetchType.LAZY)
+    
+    @Embedded 
+    @Column (nullable = true)
+    @OneToMany
+    private List<Registro_Grupo> listRegistros;
+    
+    @OneToOne
     private Documentacion documento;
     @ManyToOne
     private GrupoScout grupoScout;
@@ -100,14 +117,6 @@ public class Socios implements Serializable {
         this.fecha_baja = fecha_baja;
     }
 
-    public List<RespLegal> getListRL() {
-        return listRL;
-    }
-
-    public void setListRL(List<RespLegal> listRL) {
-        this.listRL = listRL;
-    }
-
     public List<Cuotas> getListCuotas() {
         return listCuotas;
     }
@@ -154,6 +163,22 @@ public class Socios implements Serializable {
 
     public void setGrupoScout(GrupoScout grupoScout) {
         this.grupoScout = grupoScout;
+    }
+
+    public RespLegal getRespLegal() {
+        return respLegal;
+    }
+
+    public void setRespLegal(RespLegal respLegal) {
+        this.respLegal = respLegal;
+    }
+
+    public List<Registro_Grupo> getListRegistros() {
+        return listRegistros;
+    }
+
+    public void setListRegistros(List<Registro_Grupo> listRegistros) {
+        this.listRegistros = listRegistros;
     }
     
     

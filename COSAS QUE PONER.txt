@@ -1,0 +1,7 @@
+-registro de grupo para usuarios
+-fotos para socios
+-quitar el pedido y compra
+-(dudoso) quitar seccion web
+-en la entidad documento hay que guardar el documento
+-en eventos añadir descripcion
+-cardinalidad de relacion socio-resp.legal

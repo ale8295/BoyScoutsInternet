@@ -12,6 +12,7 @@
     <class>Tarea1.Scouter</class>
     <class>Tarea1.SeccionWeb</class>
     <class>Tarea1.Socios</class>
+    <class>Tarea1.Registro_Grupo</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/sample"/>
       <property name="javax.persistence.jdbc.user" value="app"/>

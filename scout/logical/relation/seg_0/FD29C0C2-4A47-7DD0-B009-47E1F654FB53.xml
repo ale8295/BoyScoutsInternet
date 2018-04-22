@@ -7,6 +7,7 @@
 <item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
 </engineerTo>
 <sourcePk>69E31C4D-A66A-618F-5F7F-9CCCE70D884E</sourcePk>
+<targetPk>08671953-AA21-D7AB-3FBB-DB9356E58643</targetPk>
 <identifying>false</identifying>
 <nameOnSource>personal a cargo</nameOnSource>
 <nameOnTarget>es tutor de</nameOnTarget>
@@ -14,7 +15,7 @@
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>*</sourceCardinality>
 <sourceEntity>49798ECE-C23C-41C4-F6C9-51EBEA8C9571</sourceEntity>
-<targetCardinalityString>*</targetCardinalityString>
+<targetCardinalityString>1</targetCardinalityString>
 <targetEntity>A59BCAF3-9573-C8D7-3A48-C765F745000E</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>

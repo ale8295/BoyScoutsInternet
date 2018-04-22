@@ -7,6 +7,7 @@ package Tarea1;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,7 +20,7 @@ import javax.persistence.TemporalType;
  *
  * @author pepe
  */
-@Entity
+@Embeddable
 public class Comentarios implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -29,11 +30,7 @@ public class Comentarios implements Serializable {
     private String descripcion;
     @Temporal (TemporalType.DATE)
     private Date fecha;
-    @ManyToOne  //RELACION OPCIONAL PREGUNTAR
-    private Socios socio;
-    @ManyToOne
-    private Eventos evento;
-
+       
     public Long getId_comentario() {
         return id_comentario;
     }
@@ -57,23 +54,6 @@ public class Comentarios implements Serializable {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
-
-    public Socios getSocio() {
-        return socio;
-    }
-
-    public void setSocio(Socios socio) {
-        this.socio = socio;
-    }
-
-    public Eventos getEvento() {
-        return evento;
-    }
-
-    public void setEvento(Eventos evento) {
-        this.evento = evento;
-    }
-    
 
     @Override
     public int hashCode() {

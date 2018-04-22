@@ -91,19 +91,33 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_grupo" id="766ABBCA-8387-EAC7-D0BA-8B786E43CF39">
-<createdBy>anton</createdBy>
-<createdTime>2017-12-14 10:38:17 UTC</createdTime>
-<generatorID>5310A686-753B-34B9-3A8C-B17D749A3140</generatorID>
+<Attribute name="foto" id="37B27415-BB62-4F1A-141F-A7D0FFB33EBC">
+<createdBy>pepe</createdBy>
+<createdTime>2018-04-21 23:11:45 UTC</createdTime>
 <ownerDesignName>scout</ownerDesignName>
 <engineerTo>
 <item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
-<referedAttribute>CAC1B363-A20F-039B-5BF0-5C8C7C668CCC</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dni1" id="CAD79850-DA75-F5BF-3C96-CF7C9E6D3F77">
+<createdBy>pepe</createdBy>
+<createdTime>2018-04-22 10:09:19 UTC</createdTime>
+<generatorID>FD29C0C2-4A47-7DD0-B009-47E1F654FB53</generatorID>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9520F75D-851C-ACBB-89FC-0D10EF23EDDF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

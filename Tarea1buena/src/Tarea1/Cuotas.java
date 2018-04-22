@@ -7,6 +7,7 @@ package Tarea1;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,7 +20,7 @@ import javax.persistence.TemporalType;
  *
  * @author pepe
  */
-@Entity
+@Embeddable
 public class Cuotas implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -30,8 +31,7 @@ public class Cuotas implements Serializable {
     @Temporal (TemporalType.DATE)
     private Date fecha_pago;
     private String descripcion;
-    @ManyToOne
-    private Socios socio;
+    
 
     public Long getId_codigo() {
         return id_codigo;
@@ -63,14 +63,6 @@ public class Cuotas implements Serializable {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public Socios getSocio() {
-        return socio;
-    }
-
-    public void setSocio(Socios socio) {
-        this.socio = socio;
     }
 
     
