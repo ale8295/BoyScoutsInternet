@@ -1,7 +1,0 @@
-----------------------------------------------------------
--registro de grupo para usuarios (hecho)
--fotos para socios (hecho)
--quitar el pedido y compra (hecho)
--en la entidad documento hay que guardar el documento (hecho)
--en eventos añadir descripcion (hecho)
--cardinalidad de relacion socio-resp.legal (hecho)

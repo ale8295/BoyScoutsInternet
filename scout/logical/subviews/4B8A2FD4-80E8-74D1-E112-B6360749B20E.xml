@@ -69,11 +69,11 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="335" y="379" width="45" height="20"/>
+<labelBounds x="302" y="356" width="75" height="23"/>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="243" y="379" width="46" height="20"/>
+<labelBounds x="243" y="378" width="46" height="20"/>
 </targetLabel>
 <points>
 <point x="376" y="375"/>
@@ -85,14 +85,14 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="1092" y="253" width="81" height="20"/>
+<labelBounds x="1073" y="265" width="81" height="20"/>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="1092" y="351" width="53" height="20"/>
+<labelBounds x="1090" y="351" width="53" height="20"/>
 </targetLabel>
 <points>
-<point x="1054" y="243"/>
+<point x="1054" y="222"/>
 <point x="1088" y="394"/>
 </points>
 </Connector>
@@ -101,7 +101,7 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="566" y="364" width="89" height="21"/>
+<labelBounds x="593" y="364" width="96" height="20"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
@@ -115,7 +115,7 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="924" y="90" width="55" height="67"/>
+<labelBounds x="949" y="141" width="83" height="20"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
@@ -145,7 +145,7 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="586" y="140" width="51" height="20"/>
+<labelBounds x="586" y="139" width="51" height="20"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
@@ -166,7 +166,7 @@
 <labelBounds x="893" y="28" width="63" height="20"/>
 </targetLabel>
 <points>
-<point x="1038" y="92"/>
+<point x="1038" y="71"/>
 <point x="1038" y="28"/>
 <point x="840" y="28"/>
 </points>
@@ -180,7 +180,7 @@
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>
-<labelBounds x="1159" y="115" width="86" height="18"/>
+<labelBounds x="1159" y="113" width="86" height="20"/>
 </targetLabel>
 <points>
 <point x="1252" y="238"/>
@@ -257,7 +257,7 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="933" y="390" width="99" height="28"/>
+<labelBounds x="985" y="416" width="98" height="20"/>
 <noBackgroundColor>true</noBackgroundColor>
 <noForegroundColor>true</noForegroundColor>
 </sourceLabel>
@@ -271,7 +271,7 @@
 <lineWidth>1</lineWidth>
 <sourceLabel class="oracle.dbtools.crest.model.design.Label">
 <site>0</site>
-<labelBounds x="282" y="124" width="90" height="51"/>
+<labelBounds x="322" y="160" width="94" height="20"/>
 </sourceLabel>
 <targetLabel class="oracle.dbtools.crest.model.design.Label">
 <site>2</site>

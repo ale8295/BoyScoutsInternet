@@ -17,18 +17,17 @@ public class Socios implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_socio;
+    
+    @Column (nullable = false)
+    @Temporal (TemporalType.DATE)
+    private Date fecha_nacimiento;
     
     @Column (nullable = false)
     private String dni;
     
     @Column (nullable = true)
     private String grupo;
-    
-    @Column (nullable = false)
-    @Temporal (TemporalType.DATE)
-    private Date fecha_nacimiento;
     
     @Column (nullable = false)
     @Temporal (TemporalType.DATE)
@@ -52,21 +51,27 @@ public class Socios implements Serializable {
     private RespLegal respLegal;
     
     @Embedded
+    @Column (nullable = false)
     @OneToMany
+    @ElementCollection
     private List<Cuotas> listaCuotas;
     
     @Embedded
+    @Column (nullable = false)
     @OneToMany
+    @ElementCollection
     private List<Permisos> listaPermisos;
     
     @Embedded 
     @Column (nullable = true)
     @OneToMany
+    @ElementCollection
     private List<Comentarios> listaComentarios;
     
     @Embedded 
     @Column (nullable = true)
     @OneToMany
+    @ElementCollection
     private List<HistorialEventos> historialEventos;
       
     @OneToOne
@@ -76,6 +81,7 @@ public class Socios implements Serializable {
     @Embedded 
     @Column (nullable = true)
     @OneToMany
+    @ElementCollection
     private List<RegistroGrupo> listaRegistros;
          
     

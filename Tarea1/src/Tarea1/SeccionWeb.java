@@ -6,6 +6,7 @@
 package Tarea1;
 
 import java.io.Serializable;
+import java.util.List;
 import javax.persistence.*;
 
 
@@ -22,7 +23,7 @@ public class SeccionWeb implements Serializable {
     
     @Column (nullable = true)
     @OneToMany
-    private Eventos evento;
+    private List<Eventos> listaEventos;
     
     @Column (nullable = true)
     @OneToOne
@@ -45,13 +46,15 @@ public class SeccionWeb implements Serializable {
         this.nombre_seleccion = nombre_seleccion;
     }
 
-    public Eventos getEvento() {
-        return evento;
+    public List<Eventos> getListaEventos() {
+        return listaEventos;
     }
 
-    public void setEvento(Eventos evento) {
-        this.evento = evento;
+    public void setListaEventos(List<Eventos> listaEventos) {
+        this.listaEventos = listaEventos;
     }
+
+    
 
     public GrupoScout getGrupoScout() {
         return grupoScout;

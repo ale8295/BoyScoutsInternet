@@ -9,56 +9,34 @@ import java.io.Serializable;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 
+
 @Embeddable
-public class Cuotas implements Serializable {
+public class Comentarios implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id_codigo;
-    
-    @Column (nullable = false)
-    private float cantidad;
-    
-    @Column (nullable = false)
-    @Temporal (TemporalType.DATE)
-    private Date fecha_pago;
+    private Long id_comentario;
     
     @Column (nullable = true)
     private String descripcion;
     
-
-    public Long getId_codigo() {
-        return id_codigo;
+    @Column (nullable = true)
+    @Temporal (TemporalType.DATE)
+    private Date fecha;
+       
+    public Long getId_comentario() {
+        return id_comentario;
     }
 
-    public void setId_codigo(Long id_codigo) {
-        this.id_codigo = id_codigo;
-    }
-
-    public float getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(float cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public Date getFecha_pago() {
-        return fecha_pago;
-    }
-
-    public void setFecha_pago(Date fecha_pago) {
-        this.fecha_pago = fecha_pago;
+    public void setId_comentario(Long id_comentario) {
+        this.id_comentario = id_comentario;
     }
 
     public String getDescripcion() {
@@ -69,22 +47,29 @@ public class Cuotas implements Serializable {
         this.descripcion = descripcion;
     }
 
-    
+    public Date getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (id_codigo != null ? id_codigo.hashCode() : 0);
+        hash += (id_comentario != null ? id_comentario.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Cuotas)) {
+        if (!(object instanceof Comentarios)) {
             return false;
         }
-        Cuotas other = (Cuotas) object;
-        if ((this.id_codigo == null && other.id_codigo != null) || (this.id_codigo != null && !this.id_codigo.equals(other.id_codigo))) {
+        Comentarios other = (Comentarios) object;
+        if ((this.id_comentario == null && other.id_comentario != null) || (this.id_comentario != null && !this.id_comentario.equals(other.id_comentario))) {
             return false;
         }
         return true;
@@ -92,7 +77,7 @@ public class Cuotas implements Serializable {
 
     @Override
     public String toString() {
-        return "Tarea1.Cuotas[ id=" + id_codigo + " ]";
+        return "Tarea1.Comentarios[ id=" + id_comentario + " ]";
     }
     
 }

@@ -10,15 +10,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
-/**
- *
- * @author pepe
- */
-public class Tarea1buena {
+
+public class Tarea1 {
 
     public static void main(String[] string) {
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Tarea1buenaPU");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Tarea1PU");
         EntityManager em = emf.createEntityManager();
 
         em.close();
