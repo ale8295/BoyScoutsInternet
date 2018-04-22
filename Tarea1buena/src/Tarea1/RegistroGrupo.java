@@ -7,19 +7,20 @@ package Tarea1;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 /**
  *
  * @author pepe
  */
 @Embeddable
-public class Registro_Grupo implements Serializable {
+public class RegistroGrupo implements Serializable {
     
+    @Column (nullable = true)
+    @Temporal(TemporalType.DATE)
     private Date fecha_registro; 
 
     public Date getFecha_registro() {

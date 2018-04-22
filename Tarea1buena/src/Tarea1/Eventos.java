@@ -5,6 +5,7 @@
  */
 package Tarea1;
 
+import java.io.File;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -21,18 +22,47 @@ public class Eventos implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_evento;
+    
+    @Column (nullable = false)
     @Temporal (TemporalType.DATE)
-    private Date dia;
+    private Date fecha;
+    
+    @Column (nullable = false)
     private int duracion;
+    
+    @Column (nullable = false)
     private String lugar;
+    
+    @Column (nullable = true)
+    private String descripcion;
+    
+    @Column (nullable = true)
+    private String rutaImagen;
+    
+    @Column (nullable = true)
+    private String recomendaciones;
+    
+    @Column (nullable = true)
+    private String inscripcion;
+            
+    @Column (nullable = true)
+    private String asistencia;
+    
+    @Embedded 
+    @Column (nullable = true)
     @OneToMany
-    private List<Comentarios> listComents;
-    @OneToOne
+    private List<Comentarios> listaComentarios;
+    
+    @Embedded 
+    @Column (nullable = true)
+    @OneToMany
+    private List<HistorialEventos> listaHistorial;
+    
+    @ManyToOne
     private SeccionWeb seccionWeb;
+    
     @ManyToMany
-    private List<GrupoScout> grupoScout;
-    @ManyToMany
-    private List<Socios> listSocios;
+    private List<GrupoScout> listaGrupoScout;
     
     public Long getId_evento() {
         return id_evento;
@@ -42,13 +72,49 @@ public class Eventos implements Serializable {
         this.id_evento = id_evento;
     }
 
-    public Date getDia() {
-        return dia;
+    public Date getFecha() {
+        return fecha;
     }
 
-    public void setDia(Date dia) {
-        this.dia = dia;
+    public void setFecha(Date fecha) {
+        this.fecha = fecha;
     }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    
+
+    public String getRecomendaciones() {
+        return recomendaciones;
+    }
+
+    public void setRecomendaciones(String recomendaciones) {
+        this.recomendaciones = recomendaciones;
+    }
+
+    public String getInscripcion() {
+        return inscripcion;
+    }
+
+    public void setInscripcion(String inscripcion) {
+        this.inscripcion = inscripcion;
+    }
+
+    public String getAsistencia() {
+        return asistencia;
+    }
+
+    public void setAsistencia(String asistencia) {
+        this.asistencia = asistencia;
+    }
+
+    
 
     public int getDuracion() {
         return duracion;
@@ -66,14 +132,6 @@ public class Eventos implements Serializable {
         this.lugar = lugar;
     }
 
-    public List<Comentarios> getListComents() {
-        return listComents;
-    }
-
-    public void setListComents(List<Comentarios> listComents) {
-        this.listComents = listComents;
-    }
-
     public SeccionWeb getSeccionWeb() {
         return seccionWeb;
     }
@@ -82,21 +140,39 @@ public class Eventos implements Serializable {
         this.seccionWeb = seccionWeb;
     }
 
-    public List<GrupoScout> getGrupoScout() {
-        return grupoScout;
+    public List<Comentarios> getListaComentarios() {
+        return listaComentarios;
     }
 
-    public void setGrupoScout(List<GrupoScout> grupoScout) {
-        this.grupoScout = grupoScout;
+    public void setListaComentarios(List<Comentarios> listaComentarios) {
+        this.listaComentarios = listaComentarios;
     }
 
-    public List<Socios> getListSocios() {
-        return listSocios;
+    public List<HistorialEventos> getListaHistorial() {
+        return listaHistorial;
     }
 
-    public void setListSocios(List<Socios> listSocios) {
-        this.listSocios = listSocios;
+    public void setListaHistorial(List<HistorialEventos> listaHistorial) {
+        this.listaHistorial = listaHistorial;
     }
+
+    public String getRutaImagen() {
+        return rutaImagen;
+    }
+
+    public void setRutaImagen(String rutaImagen) {
+        this.rutaImagen = rutaImagen;
+    }
+
+    public List<GrupoScout> getListaGrupoScout() {
+        return listaGrupoScout;
+    }
+
+    public void setListaGrupoScout(List<GrupoScout> listaGrupoScout) {
+        this.listaGrupoScout = listaGrupoScout;
+    }
+
+    
 
     @Override
     public int hashCode() {

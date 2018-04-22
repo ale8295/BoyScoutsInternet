@@ -5,6 +5,7 @@
  */
 package Tarea1;
 
+import java.io.File;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -21,14 +22,33 @@ public class Socios implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_socio;
+    
+    @Column (nullable = false)
     private String dni;
+    
+    @Column (nullable = true)
     private String grupo;
+    
+    @Column (nullable = false)
     @Temporal (TemporalType.DATE)
     private Date fecha_nacimiento;
+    
+    @Column (nullable = false)
     @Temporal (TemporalType.DATE)
     private Date fecha_ingreso;
+    
+    @Column (nullable = true)
     @Temporal (TemporalType.DATE)
     private Date fecha_baja;
+    
+    @Column (nullable = true)
+    private String rutaFoto; //Imagen de socio
+    
+    @Column (nullable = false)
+    private String usuario; //Nombre de acceso del usuario
+    
+    @Column (nullable = false)
+    private String contrasena; //Contraseña del usuario
     
     @Column (nullable = true)
     @ManyToOne
@@ -36,30 +56,31 @@ public class Socios implements Serializable {
     
     @Embedded
     @OneToMany
-    private List<Cuotas> listCuotas;
+    private List<Cuotas> listaCuotas;
     
     @Embedded
     @OneToMany
-    private List<Permisos> listPermisos;
+    private List<Permisos> listaPermisos;
     
     @Embedded 
     @Column (nullable = true)
     @OneToMany
-    private List<Comentarios> listComentarios;
-    
-    @Column (nullable = true)
-    @ManyToMany
-    private List<Eventos> listEventos;
+    private List<Comentarios> listaComentarios;
     
     @Embedded 
     @Column (nullable = true)
     @OneToMany
-    private List<Registro_Grupo> listRegistros;
-    
+    private List<HistorialEventos> historialEventos;
+      
     @OneToOne
-    private Documentacion documento;
-    @ManyToOne
-    private GrupoScout grupoScout;
+    @Column (nullable = true)
+    private Documentacion documentacion;
+    
+    @Embedded 
+    @Column (nullable = true)
+    @OneToMany
+    private List<RegistroGrupo> listaRegistros;
+         
     
     public Long getId() {
         return id_socio;
@@ -117,54 +138,6 @@ public class Socios implements Serializable {
         this.fecha_baja = fecha_baja;
     }
 
-    public List<Cuotas> getListCuotas() {
-        return listCuotas;
-    }
-
-    public void setListCuotas(List<Cuotas> listCuotas) {
-        this.listCuotas = listCuotas;
-    }
-
-    public List<Permisos> getListPermisos() {
-        return listPermisos;
-    }
-
-    public void setListPermisos(List<Permisos> listPermisos) {
-        this.listPermisos = listPermisos;
-    }
-
-    public List<Comentarios> getListComentarios() {
-        return listComentarios;
-    }
-
-    public void setListComentarios(List<Comentarios> listComentarios) {
-        this.listComentarios = listComentarios;
-    }
-
-    public List<Eventos> getListEventos() {
-        return listEventos;
-    }
-
-    public void setListEventos(List<Eventos> listEventos) {
-        this.listEventos = listEventos;
-    }
-
-    public Documentacion getDocumento() {
-        return documento;
-    }
-
-    public void setDocumento(Documentacion documento) {
-        this.documento = documento;
-    }
-
-    public GrupoScout getGrupoScout() {
-        return grupoScout;
-    }
-
-    public void setGrupoScout(GrupoScout grupoScout) {
-        this.grupoScout = grupoScout;
-    }
-
     public RespLegal getRespLegal() {
         return respLegal;
     }
@@ -173,14 +146,78 @@ public class Socios implements Serializable {
         this.respLegal = respLegal;
     }
 
-    public List<Registro_Grupo> getListRegistros() {
-        return listRegistros;
+    public String getRutaFoto() {
+        return rutaFoto;
     }
 
-    public void setListRegistros(List<Registro_Grupo> listRegistros) {
-        this.listRegistros = listRegistros;
+    public void setRutaFoto(String rutaFoto) {
+        this.rutaFoto = rutaFoto;
     }
-    
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
+    }
+
+    public List<Cuotas> getListaCuotas() {
+        return listaCuotas;
+    }
+
+    public void setListaCuotas(List<Cuotas> listaCuotas) {
+        this.listaCuotas = listaCuotas;
+    }
+
+    public List<Permisos> getListaPermisos() {
+        return listaPermisos;
+    }
+
+    public void setListaPermisos(List<Permisos> listaPermisos) {
+        this.listaPermisos = listaPermisos;
+    }
+
+    public List<Comentarios> getListaComentarios() {
+        return listaComentarios;
+    }
+
+    public void setListaComentarios(List<Comentarios> listaComentarios) {
+        this.listaComentarios = listaComentarios;
+    }
+
+    public List<HistorialEventos> getHistorialEventos() {
+        return historialEventos;
+    }
+
+    public void setHistorialEventos(List<HistorialEventos> historialEventos) {
+        this.historialEventos = historialEventos;
+    }
+
+    public Documentacion getDocumentacion() {
+        return documentacion;
+    }
+
+    public void setDocumentacion(Documentacion documentacion) {
+        this.documentacion = documentacion;
+    }
+
+    public List<RegistroGrupo> getListaRegistros() {
+        return listaRegistros;
+    }
+
+    public void setListaRegistros(List<RegistroGrupo> listaRegistros) {
+        this.listaRegistros = listaRegistros;
+    }
+
     
     @Override
     public int hashCode() {

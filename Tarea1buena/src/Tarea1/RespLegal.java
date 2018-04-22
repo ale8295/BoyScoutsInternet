@@ -20,10 +20,19 @@ public class RespLegal implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String dni;
+    
+    @Column (nullable = false)
     private String nombre;
+    
+    @Column (nullable = false)
     private String apellidos;
+    
+    @Column (nullable = false)
     private String email;
-    @ManyToMany (mappedBy = "listRL")
+    
+    
+    @OneToMany
+    @Column (nullable = false)
     private List<Socios> listSocios;
 
     public String getDni() {

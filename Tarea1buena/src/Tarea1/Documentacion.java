@@ -5,6 +5,7 @@
  */
 package Tarea1;
 
+import java.io.File;
 import java.io.Serializable;
 import javax.persistence.*;
 
@@ -19,9 +20,19 @@ public class Documentacion implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long cod_documento;
+    
+    @Column (nullable = true)
     private String estado;
+    
+    @Column (nullable = true)
     private String url;
+    
+    @Column (nullable = true)
     private String comentario;
+    
+    @Column (nullable = false)
+    private File documento;
+    
     @OneToOne
     private Socios socio;
     
@@ -63,6 +74,14 @@ public class Documentacion implements Serializable {
 
     public void setSocio(Socios socio) {
         this.socio = socio;
+    }
+
+    public File getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(File documento) {
+        this.documento = documento;
     }
 
     @Override

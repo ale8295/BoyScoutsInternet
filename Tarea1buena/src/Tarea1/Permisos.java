@@ -19,11 +19,22 @@ public class Permisos implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_permiso;
+    
+    @Column (nullable = false)
     private boolean escribir;
+    
+    @Column (nullable = false)
     private boolean leer;
+    
+    @Column (nullable = false)
     private boolean subirDoc;
+    
+    @Column (nullable = false)
     private boolean adminTienda;
+    
+    @Column (nullable = false)
     private boolean gestion;
+    
 
     public Long getId_permiso() {
         return id_permiso;

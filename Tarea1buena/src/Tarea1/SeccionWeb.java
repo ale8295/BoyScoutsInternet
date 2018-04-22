@@ -19,9 +19,15 @@ public class SeccionWeb implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long url;
+    
+    @Column (nullable = false)
     private String nombre_seleccion;
-    @OneToOne
+    
+    @Column (nullable = true)
+    @OneToMany
     private Eventos evento;
+    
+    @Column (nullable = true)
     @OneToOne
     private GrupoScout grupoScout;
     

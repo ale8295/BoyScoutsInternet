@@ -7,6 +7,7 @@ package Tarea1;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -27,9 +28,15 @@ public class Cuotas implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_codigo;
+    
+    @Column (nullable = false)
     private float cantidad;
+    
+    @Column (nullable = false)
     @Temporal (TemporalType.DATE)
     private Date fecha_pago;
+    
+    @Column (nullable = true)
     private String descripcion;
     
 

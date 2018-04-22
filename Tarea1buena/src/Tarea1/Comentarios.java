@@ -7,12 +7,11 @@ package Tarea1;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -20,6 +19,7 @@ import javax.persistence.TemporalType;
  *
  * @author pepe
  */
+
 @Embeddable
 public class Comentarios implements Serializable {
 
@@ -27,7 +27,11 @@ public class Comentarios implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_comentario;
+    
+    @Column (nullable = true)
     private String descripcion;
+    
+    @Column (nullable = true)
     @Temporal (TemporalType.DATE)
     private Date fecha;
        

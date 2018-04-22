@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="dia" id="B1BA51F2-6B49-1A60-3EA4-B9E44005B285">
+<Attribute name="fecha" id="B1BA51F2-6B49-1A60-3EA4-B9E44005B285">
 <createdBy>Carliasus</createdBy>
 <createdTime>2017-11-17 09:55:12 UTC</createdTime>
 <ownerDesignName>scout</ownerDesignName>
@@ -93,6 +93,61 @@
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>80</dataTypeSize>
 <ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="imagen" id="B2733CAC-2F54-099C-6814-8C01DEE4C960">
+<createdBy>pepe</createdBy>
+<createdTime>2018-04-22 10:59:23 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT010</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="recomendaciones" id="953F32B8-DA76-F588-BEE5-8B1FDD5AAC4F">
+<createdBy>pepe</createdBy>
+<createdTime>2018-04-22 10:59:23 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inscripcion" id="88E7BEBC-CA58-289D-993B-B0B7F6A7C529">
+<createdBy>pepe</createdBy>
+<createdTime>2018-04-22 10:59:24 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="asistencia" id="2A0EB201-1425-7020-7C48-4FA910FC50C6">
+<createdBy>pepe</createdBy>
+<createdTime>2018-04-22 10:59:24 UTC</createdTime>
+<ownerDesignName>scout</ownerDesignName>
+<engineerTo>
+<item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

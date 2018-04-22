@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4244023-3AA2-1071-A5D2-F4EAA509BE90" name="REGISTRO_GRUPO">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="35CED3FA-6F56-EBEA-722A-F61CEA8A07E9" name="HISTORIAL_EVENTOS">
 <createdBy>pepe</createdBy>
-<createdTime>2018-04-22 10:02:42 UTC</createdTime>
+<createdTime>2018-04-22 11:10:27 UTC</createdTime>
 <ownerDesignName>scout</ownerDesignName>
 <engineerTo>
 <item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
@@ -15,22 +15,24 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="fecha_registro" id="D8DB90AB-DC0E-AF32-A8AA-3C10B84644D3">
+<Attribute name="valoracion" id="9BF8EB23-7403-83E6-951E-50746B2D3D25">
 <createdBy>pepe</createdBy>
-<createdTime>2018-04-22 10:03:05 UTC</createdTime>
+<createdTime>2018-04-22 11:10:45 UTC</createdTime>
 <ownerDesignName>scout</ownerDesignName>
 <engineerTo>
 <item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
 </engineerTo>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT007</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_socio" id="EAA42C18-F5B1-CE16-796B-C2F2610FC0FC">
+<Attribute name="id_socio" id="AEAEB486-6DD0-2824-C3D6-BF0A4B7BDC82">
 <createdBy>pepe</createdBy>
-<createdTime>2018-04-22 10:05:38 UTC</createdTime>
-<generatorID>153F816F-606A-F799-CD6C-5B677D992DB0</generatorID>
+<createdTime>2018-04-22 11:11:37 UTC</createdTime>
+<generatorID>33BE2B68-552C-094A-D58B-EEB0F74EABCF</generatorID>
 <ownerDesignName>scout</ownerDesignName>
 <engineerTo>
 <item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
@@ -41,15 +43,15 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_grupo" id="C84EF793-AA1E-6D25-C835-A1928F8D557E">
+<Attribute name="id_evento" id="55784596-8F04-F1C7-5962-D7AFD66E7503">
 <createdBy>pepe</createdBy>
-<createdTime>2018-04-22 10:07:31 UTC</createdTime>
-<generatorID>BE44C7EC-9BA0-9787-4FBD-B5050BC168B4</generatorID>
+<createdTime>2018-04-22 11:12:03 UTC</createdTime>
+<generatorID>19F1B350-EA8C-8A8D-882D-0437C76ED238</generatorID>
 <ownerDesignName>scout</ownerDesignName>
 <engineerTo>
 <item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
 </engineerTo>
-<referedAttribute>CAC1B363-A20F-039B-5BF0-5C8C7C668CCC</referedAttribute>
+<referedAttribute>F6C729ED-0AB6-0D7A-B5BC-FF8FFC8D31EE</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -57,17 +59,17 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="028E56D4-82C3-C7B8-82F4-1ED045E97BAB" name="REGISTRO_GRUPO PK">
+<identifier id="A581AF24-7D20-211C-4534-56FFFD170A5A" name="HISTORIAL_EVENTOS PK">
 <createdBy>pepe</createdBy>
-<createdTime>2018-04-22 10:05:38 UTC</createdTime>
+<createdTime>2018-04-22 11:11:37 UTC</createdTime>
 <ownerDesignName>scout</ownerDesignName>
 <engineerTo>
 <item key="83894FD1-E4F0-20F9-AE40-66486F6D94FB" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>EAA42C18-F5B1-CE16-796B-C2F2610FC0FC</attributeRef>
-<attributeRef>C84EF793-AA1E-6D25-C835-A1928F8D557E</attributeRef>
+<attributeRef>AEAEB486-6DD0-2824-C3D6-BF0A4B7BDC82</attributeRef>
+<attributeRef>55784596-8F04-F1C7-5962-D7AFD66E7503</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

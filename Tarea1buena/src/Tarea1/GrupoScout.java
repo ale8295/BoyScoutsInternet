@@ -20,20 +20,26 @@ public class GrupoScout implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_grupo;
+    
+    @Column (nullable = false)
     private String nombre_grupo;
-    @OneToMany
-    private List<Socios> listSocios;
+    
     @OneToOne
+    @Column (nullable = false)
     private Scouter scouter;
+    
     @ManyToMany
-    private List<Eventos> listEventos;
+    @Column (nullable = true)
+    private List<Eventos> listaEventos;
+    
     @OneToOne
+    @Column (nullable = true)
     private SeccionWeb seccionWeb;
     
     @Embedded 
     @Column (nullable = true)
     @OneToMany
-    private List<Registro_Grupo> listRegistros;
+    private List<RegistroGrupo> listRegistros;
     
     public Long getId_grupo() {
         return id_grupo;
@@ -51,14 +57,6 @@ public class GrupoScout implements Serializable {
         this.nombre_grupo = nombre_grupo;
     }
 
-    public List<Socios> getListSocios() {
-        return listSocios;
-    }
-
-    public void setListSocios(List<Socios> listSocios) {
-        this.listSocios = listSocios;
-    }
-
     public Scouter getScouter() {
         return scouter;
     }
@@ -67,12 +65,12 @@ public class GrupoScout implements Serializable {
         this.scouter = scouter;
     }
 
-    public List<Eventos> getListEventos() {
-        return listEventos;
+    public List<Eventos> getListaEventos() {
+        return listaEventos;
     }
 
-    public void setListEventos(List<Eventos> listEventos) {
-        this.listEventos = listEventos;
+    public void setListaEventos(List<Eventos> listaEventos) {
+        this.listaEventos = listaEventos;
     }
 
     public SeccionWeb getSeccionWeb() {
@@ -83,11 +81,11 @@ public class GrupoScout implements Serializable {
         this.seccionWeb = seccionWeb;
     }
 
-    public List<Registro_Grupo> getListRegistros() {
+    public List<RegistroGrupo> getListRegistros() {
         return listRegistros;
     }
 
-    public void setListRegistros(List<Registro_Grupo> listRegistros) {
+    public void setListRegistros(List<RegistroGrupo> listRegistros) {
         this.listRegistros = listRegistros;
     }
 
