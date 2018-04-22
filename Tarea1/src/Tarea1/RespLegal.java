@@ -15,21 +15,20 @@ public class RespLegal implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private String dni;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String nombre;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String apellidos;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String email;
     
     
     @OneToMany
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private List<Socios> listSocios;
 
     public String getDni() {

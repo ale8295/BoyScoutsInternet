@@ -13,6 +13,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -21,18 +22,18 @@ import javax.persistence.TemporalType;
 @Embeddable
 public class Cuotas implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-    @Id
+    
+    @JoinColumn (nullable = false)
     private Long id_codigo;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private float cantidad;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     @Temporal (TemporalType.DATE)
     private Date fecha_pago;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String descripcion;
     
 

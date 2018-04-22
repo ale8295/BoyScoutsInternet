@@ -15,7 +15,7 @@ public class Tarea1 {
 
     public static void main(String[] string) {
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Tarea1PU");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("Tarea1");
         EntityManager em = emf.createEntityManager();
 
         em.close();

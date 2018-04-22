@@ -15,27 +15,27 @@ public class GrupoScout implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_grupo;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String nombre_grupo;
     
     @OneToOne
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private Scouter scouter;
     
     @ManyToMany
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private List<Eventos> listaEventos;
     
     @OneToOne
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private SeccionWeb seccionWeb;
     
     @Embedded 
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @OneToMany
+    @ElementCollection
     private List<RegistroGrupo> listRegistros;
     
     public Long getId_grupo() {

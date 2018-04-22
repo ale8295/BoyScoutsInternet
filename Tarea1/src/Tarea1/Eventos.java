@@ -17,42 +17,43 @@ public class Eventos implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id_evento;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     @Temporal (TemporalType.DATE)
     private Date fecha;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private int duracion;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String lugar;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String descripcion;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String rutaImagen;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String recomendaciones;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String inscripcion;
             
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String asistencia;
     
     @Embedded 
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @OneToMany
+    @ElementCollection
     private List<Comentarios> listaComentarios;
     
     @Embedded 
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @OneToMany
+    @ElementCollection
     private List<HistorialEventos> listaHistorial;
     
     @ManyToOne

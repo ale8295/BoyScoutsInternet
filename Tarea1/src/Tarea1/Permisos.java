@@ -12,23 +12,22 @@ import javax.persistence.*;
 @Embeddable
 public class Permisos implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-    @Id
+    @JoinColumn (nullable = false)
     private Long id_permiso;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private boolean escribir;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private boolean leer;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private boolean subirDoc;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private boolean adminTienda;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private boolean gestion;
     
 

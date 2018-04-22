@@ -12,17 +12,18 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 
 
 @Entity
 public class Scouter extends Socios implements Serializable  {
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String cargo;
     
     @OneToOne
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private GrupoScout grupoScout;
     
     

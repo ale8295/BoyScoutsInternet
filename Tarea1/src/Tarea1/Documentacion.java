@@ -15,19 +15,18 @@ public class Documentacion implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long cod_documento;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String estado;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String url;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String comentario;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private File documento;
     
     @OneToOne

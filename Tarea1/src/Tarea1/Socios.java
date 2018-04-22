@@ -19,67 +19,67 @@ public class Socios implements Serializable {
     @Id
     private Long id_socio;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     @Temporal (TemporalType.DATE)
     private Date fecha_nacimiento;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String dni;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String grupo;
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     @Temporal (TemporalType.DATE)
     private Date fecha_ingreso;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @Temporal (TemporalType.DATE)
     private Date fecha_baja;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String rutaFoto; //Imagen de socio
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String usuario; //Nombre de acceso del usuario
     
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     private String contrasena; //Contraseña del usuario
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @ManyToOne
     private RespLegal respLegal;
     
     @Embedded
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     @OneToMany
     @ElementCollection
     private List<Cuotas> listaCuotas;
     
     @Embedded
-    @Column (nullable = false)
+    @JoinColumn (nullable = false)
     @OneToMany
     @ElementCollection
     private List<Permisos> listaPermisos;
     
     @Embedded 
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @OneToMany
     @ElementCollection
     private List<Comentarios> listaComentarios;
     
     @Embedded 
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @OneToMany
     @ElementCollection
     private List<HistorialEventos> historialEventos;
       
     @OneToOne
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private Documentacion documentacion;
     
     @Embedded 
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @OneToMany
     @ElementCollection
     private List<RegistroGrupo> listaRegistros;

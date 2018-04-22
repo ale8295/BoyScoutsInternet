@@ -12,6 +12,7 @@ import javax.persistence.Embeddable;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
@@ -20,14 +21,13 @@ import javax.persistence.TemporalType;
 @Embeddable
 public class Comentarios implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-    @Id
+    @JoinColumn (nullable = false)
     private Long id_comentario;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String descripcion;
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     @Temporal (TemporalType.DATE)
     private Date fecha;
        

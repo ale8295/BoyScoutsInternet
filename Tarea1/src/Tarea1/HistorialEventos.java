@@ -8,12 +8,13 @@ package Tarea1;
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
+import javax.persistence.JoinColumn;
 
 
 @Embeddable
 public class HistorialEventos implements Serializable {
     
-    @Column (nullable = true)
+    @JoinColumn (nullable = true)
     private String valoracion;
 
     public String getValoracion() {
