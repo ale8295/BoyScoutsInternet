@@ -14,10 +14,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-/**
- *
- * @author pepe
- */
+
 @Entity
 public class Scouter extends Socios implements Serializable  {
     

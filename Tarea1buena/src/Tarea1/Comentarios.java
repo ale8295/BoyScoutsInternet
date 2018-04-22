@@ -15,10 +15,7 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-/**
- *
- * @author pepe
- */
+
 
 @Embeddable
 public class Comentarios implements Serializable {

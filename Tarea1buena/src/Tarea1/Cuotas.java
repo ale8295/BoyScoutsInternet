@@ -17,10 +17,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-/**
- *
- * @author pepe
- */
+
 @Embeddable
 public class Cuotas implements Serializable {
 

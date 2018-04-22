@@ -8,10 +8,7 @@ package Tarea1;
 import java.io.Serializable;
 import javax.persistence.*;
 
-/**
- *
- * @author pepe
- */
+
 @Embeddable
 public class Permisos implements Serializable {
 

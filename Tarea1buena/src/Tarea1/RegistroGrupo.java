@@ -12,10 +12,7 @@ import javax.persistence.Embeddable;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-/**
- *
- * @author pepe
- */
+
 @Embeddable
 public class RegistroGrupo implements Serializable {
     

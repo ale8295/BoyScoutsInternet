@@ -11,10 +11,7 @@ import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
 
-/**
- *
- * @author pepe
- */
+
 @Entity
 public class Eventos implements Serializable {
 

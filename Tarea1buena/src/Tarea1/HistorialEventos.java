@@ -9,10 +9,7 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
-/**
- *
- * @author pepe
- */
+
 @Embeddable
 public class HistorialEventos implements Serializable {
     

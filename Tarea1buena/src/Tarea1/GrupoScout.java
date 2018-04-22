@@ -9,10 +9,7 @@ import java.io.Serializable;
 import java.util.List;
 import javax.persistence.*;
 
-/**
- *
- * @author pepe
- */
+
 @Entity
 public class GrupoScout implements Serializable {
 

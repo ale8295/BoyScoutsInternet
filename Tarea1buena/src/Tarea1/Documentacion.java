@@ -9,10 +9,7 @@ import java.io.File;
 import java.io.Serializable;
 import javax.persistence.*;
 
-/**
- *
- * @author pepe
- */
+
 @Entity
 public class Documentacion implements Serializable {
 
