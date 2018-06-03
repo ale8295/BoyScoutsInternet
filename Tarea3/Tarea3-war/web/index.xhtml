@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Grupo Scout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+
+        <!-- Website CSS style -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Website Font style -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'/>
+        <h:outputScript library="primefaces" name="jquery/jquery.js" target="head"/>
+        <h:outputScript library="js" name="bootstrap.js" target="head"/>
+        <h:outputScript library="js" name="jquery-3.0.0.js" target="head"/>
+        <h:outputScript library="js" name="popper.js" target="head"/>
+        <h:outputScript library="js" name="jquery.js" target="head"/>
+
+    </h:head>
+    <h:body>
+
+         <!--BARRA DE NAVEGACIÓN-->
+       <nav class="navbar navbar-inverse navbar-static-top" role="Navigation">
+            <div>
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.xhtml">Grupo Scout 39</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="ListaEventos.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>Eventos</a></li>
+                            <li><a href="ASDE.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>ASDE</a></li>
+                            <li><a href="Colegio.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>Colegio</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicons glyphicons-group"></span>Sobre Nosotros <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Ubicacion.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>¿Dónde estamos?</a></li>
+                                    <li><a href="QuieresApuntarte.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>¿Quieres unirte?</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicons glyphicons-group"></span>Información <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Uniformes.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>Uniformes</a></li>
+                                    <li><a href="HacerMochila.xhtml"><span class="glyphicons glyphicons-menu-hamburger">Cómo hacer una mochila</span></a></li>
+                                     <li><a href="EquipamientoBasico.xhtml"><span class="glyphicons glyphicons-menu-hamburger">Equipamiento básico</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                         <c:choose>
+                            <c:when test="#{empty controlAutorizacion.usuario}">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <a href="signin.xhtml" class="btn btn-info btn-lg active" style="margin: 5px" role="button" aria-pressed="true">Iniciar Sesión</a>
+
+                                </ul>
+                            </c:when>
+                            <c:otherwise>
+                                <h:form>
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <div class="btn-group">
+                                            <button type="button" style="margin: 7px"  class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Estás conectado como: #{controlAutorizacion.getUsuario().usuario}
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><h:commandLink action="Perfil.xhtml" value="Perfil"/></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><h:commandLink action="#{controlAutorizacion.logout()}" value="Cerrar sesión"/></li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+
+
+                                </h:form>
+
+                            </c:otherwise>
+                        </c:choose>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <!--FIN-->
+
+        <!--PONER ALGO BONITO-->
+
+        <!--A PARTIR DE AQUI-->
+
+        <br/>
+        <div class="container" >
+            
+            <div class="col-md-9">
+                <br/> 
+                <h1>Grupo Scout 39 Santo Ángel</h1>
+                <br/> 
+                <p>El Grupo Scout 39 Santo Ángel está formado actualmente por unos cincuenta chicos y chicas que, junto a sus scouters, se reúnen cada fin de semana para dejar el mundo mejor que lo encontraron. Es el más antiguo de Andalucía (fue creado en 1962) y se integra, junto a otros muchos grupos, en <a href="http://www.scoutsdeandalucia.org/" target="_blank">Scouts de Andalucía</a>. Así que, como podéis imaginar, tiene una larga historia durante la cual ha ido cambiando de sede (pasamos muchos años en el bajo de la Parroquia de Santo Ángel) hasta establecernos en el <a href="http://39.scoutsdeandalucia.org/colegio-guadaljaire/">Colegio Guadaljaire</a>, con unas instalaciones y una predisposición magnífica para el trabajo de un grupo scout.</p>
+                <p>La pañoleta del Grupo 39 es azul y blanca.  Actualmente, el Grupo está compuesto por cuatro secciones: la <a href="/manada">Manada de Tha</a>, la <a href="/tropa">Tropa de Kim</a>, la <a href="/unidad">Unidad Esculta Siryu</a> y el <a href="/clan">Clan Rover Almogama</a>.  Somos un grupo relativamente pequeño y todas las secciones están muy unidas.</p>
+
+                <p>Durante la larga historia de nuestro grupo hemos asistido a muchas acampadas y Festivales. En el curso 92-93, coincidiendo con nuestro XXX Aniversario de Grupo, ganamos el Festival de la Canción de Andalucía, con Familia Feliz, y todo el grupo viajó a Tarragona al Nacional. Pirineos, el Camino de Santiago,  Sierra Nevada, Serranía de Ronda, Madrid… cada campamento, un nuevo destino. La historia de nuestro grupo puede repasarse también a través de las muchas canciones que nos han unido, durante muchas generaciones, en torno a un mismo sentimiento scout. Por nuestro 50º Aniversario realizamos el campamento de verano en Gredos. En 2016 ganamos el Festival de la Canción Scout de Andalucía y nos disponemos a representar a toda la comunidad en Gran Canarias en verano de 2017.</p>
+                <p>¡En este vídeo podéis ver nuestro local!</p>
+                <p><span class="embed-youtube" style="text-align:center; display: block;"><iframe class='youtube-player' type='text/html' width='640' height='390' src='http://www.youtube.com/embed/-CrO4uiWb-E?version=3&#038;rel=1&#038;fs=1&#038;autohide=2&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' allowfullscreen='true' style='border:0;'></iframe></span></p>
+                <br/><br/><br/><br/>
+            </div>
+
+            <div class="col-md-3">
+
+                <div class="container-fluid">
+                    <h:form id="form">
+                        <p:growl id="msgs" showDetail="true" />
+                        <h:panelGrid columns="2" cellpadding="5">
+                            <p:calendar id="inline" class="calendario" value="#{calendarView.date1}" mode="inline" />
+                        </h:panelGrid>
+                    </h:form>
+                </div>
+                <p align="center"><br/><br/><img class="container-fluid" src="http://i2.wp.com/39.scoutsdeandalucia.org/wp-content/uploads/2014/12/Panoleta.jpg?resize=225%2C300" alt="Grupo Scout 39 Santo Angel - Málaga" srcset="http://i2.wp.com/39.scoutsdeandalucia.org/wp-content/uploads/2014/12/Panoleta.jpg?resize=225%2C300 225w, http://i2.wp.com/39.scoutsdeandalucia.org/wp-content/uploads/2014/12/Panoleta.jpg?resize=768%2C1024 768w, http://i2.wp.com/39.scoutsdeandalucia.org/wp-content/uploads/2014/12/Panoleta.jpg?w=1200 1200w" sizes="(max-width: 225px) 100vw, 225px" data-recalc-dims="1" /></p>
+                <p align="center">Pañoleta del Grupo 39.</p>
+
+            </div>
+
+
+        </div>
+
+        <br/><br/><br/><br/>
+        <!--HASTA    AQUI-->
+
+        <!--PIE DE PAGINA-->
+        <nav class="pie navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">  
+                 <ul class="nav navbar-nav navbar-center">
+                     <p align="center">
+                        <li> <font color="gray" ><strong><span class="glyphicons glyphicons-eye-open"></span>Copyright ©2018. Grupo Scout 39 Santo Angel - Málaga </strong> </font></li>
+                     </p>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="informacionlegal.xhtml"><span class="glyphicons glyphicons-eye-open"></span>Informacion Legal</a></li>
+                    <li><a href="mailto:grupo39santoangel@gmail.com" ><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--FIN-->
+
+    </h:body>
+</html>
+

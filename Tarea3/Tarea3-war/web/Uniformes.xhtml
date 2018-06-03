@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Grupo Scout</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <!-- Website CSS style -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Website Font style -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'/>
+        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <h:outputScript library="primefaces" name="jquery/jquery.js" target="head"/>
+        <h:outputScript library="js" name="bootstrap.js" target="head"/>
+        <h:outputScript library="js" name="jquery-3.0.0.js" target="head"/>
+        <h:outputScript library="js" name="popper.js" target="head"/>
+        <h:outputScript library="js" name="jquery.js" target="head"/>
+
+    </h:head>
+    <h:body>
+
+        <!--BARRA DE NAVEGACIÓN-->
+        <nav class="navbar navbar-inverse navbar-static-top" role="Navigation">
+            <div>
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.xhtml">Grupo Scout 39</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="ListaEventos.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>Eventos</a></li>
+                            <li><a href="ASDE.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>ASDE</a></li>
+                            <li><a href="Colegio.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>Colegio</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicons glyphicons-group"></span>Sobre Nosotros <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Ubicacion.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>¿Dónde estamos?</a></li>
+                                    <li><a href="QuieresApuntarte.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>¿Quieres unirte?</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicons glyphicons-group"></span>Información <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Uniformes.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>Uniformes</a></li>
+                                    <li><a href="HacerMochila.xhtml"><span class="glyphicons glyphicons-menu-hamburger">Cómo hacer una mochila</span></a></li>
+                                    <li><a href="EquipamientoBasico.xhtml"><span class="glyphicons glyphicons-menu-hamburger">Equipamiento básico</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <c:choose>
+                            <c:when test="#{empty controlAutorizacion.usuario}">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <a href="signin.xhtml" class="btn btn-info btn-lg active" style="margin: 5px" role="button" aria-pressed="true">Iniciar Sesión</a>
+
+                                </ul>
+                            </c:when>
+                            <c:otherwise>
+                                <h:form>
+
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <div class="btn-group">
+                                            <button type="button" style="margin: 7px" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Estás conectado como: #{controlAutorizacion.getUsuario().usuario}
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><h:commandLink action="#" value="Perfil"/></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><h:commandLink action="#{controlAutorizacion.logout()}" value="Cerrar sesión"/></li>
+                                            </ul>
+                                        </div>
+                                    </ul>
+
+
+                                </h:form>
+
+                            </c:otherwise>
+                        </c:choose>
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <!--FIN-->
+
+        <!--PONER ALGO BONITO-->
+
+        <!--A PARTIR DE AQUI-->
+
+
+        <div class="container " >
+            <div class="col-lg-9 col-md-9 col-sm-12">
+                <br/> 
+                <h1 class="post-title entry-title" >Uniformes</h1>
+                <br/> 
+                <p>El Grupo se encarga de hacer los pedidos de uniformes y camisetas de trabajo que necesiten los scouts.</p>
+                <h3>Precios</h3>
+                <ul>
+                    <br/> <li>Uniforme: 16€</li>
+                    <br/> <li>Camiseta del grupo: 5€</li>
+                    <br/> <li>Pañoletas: 5€</li>
+                    <br/> <li>Insignias: 3€</li>
+                </ul>
+                <p>Si quieres encargar alguna cosa, mándanos un correo a <a href="mailto:grupo39santoangel@gmail.com">grupo39santoangel@gmail.com</a>, especificando lo que solicitas y la talla. Los pedidos suelen realizarse dos veces durante el curso.</p>
+                <h3>Fotos</h3>
+                <div>
+                    <div class="container" style="width: 60%">                      
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                                <li data-target="#myCarousel" data-slide-to="4"></li>
+                                <li data-target="#myCarousel" data-slide-to="5"></li>
+                                <li data-target="#myCarousel" data-slide-to="6"></li>
+                                <li data-target="#myCarousel" data-slide-to="7"></li>
+                                <li data-target="#myCarousel" data-slide-to="8"></li>
+                                <li data-target="#myCarousel" data-slide-to="9"></li>
+                                <li data-target="#myCarousel" data-slide-to="10"></li>
+                                <li data-target="#myCarousel" data-slide-to="11"></li>
+                                <li data-target="#myCarousel" data-slide-to="12"></li>
+                                <li data-target="#myCarousel" data-slide-to="13"></li>
+                                <li data-target="#myCarousel" data-slide-to="14"></li>
+                                <li data-target="#myCarousel" data-slide-to="15"></li>
+                                <li data-target="#myCarousel" data-slide-to="16"></li>
+                            </ol>
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <img src="resources/images/Uniforme.png" alt="Uniforme" style="height: 100%;width: 100%"/>
+                                </div>                                                    
+                                <div class="item">
+                                    <img src="resources/images/scouter.png" alt="Scout" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/Panoleta.jpg" alt="Pañoleta" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/Camiseta.jpg" alt="Camiseta" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/escultas-animacion.png" alt="Escultas Animacion" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/escultas-integracion.png" alt="Escultas Integracion" style="height: 100%;width: 100%"/>>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/escultas-participacion.png" alt="Escultas Participacion" style="height: 100%;width: 100%"/>>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/lobatos-animacion.png" alt="Lobatos Animacion" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/lobatos-integracion.png" alt="Lobatos Integracion" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/lobatos-participacion.png" alt="Lobatos Participacion" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/rovers-animacion.png" alt="Rovers Animacion" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/rovers-integracion.png" alt="Rovers Integracion" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/rovers-participacion.png" alt="Rovers Participacion" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/scout-integracion.png" alt="Scout Integracion" style="height: 100%;width: 100%"/>
+                                </div>       
+                                <div class="item">
+                                    <img src="resources/images/scouts-animacion.png" alt="Scouts Animacion" style="height: 100%;width: 100%"/>
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/scouts-participacion.png" alt="Scouts Participacion" style="height: 100%;width: 100%"/>
+                                </div>
+                            </div>
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/><br/><br/><br/>
+            <div class="col-md-3">
+                <div class="container-fluid">
+                    <h:form id="form">
+                        <p:growl id="msgs" showDetail="true" />
+                        <h:panelGrid columns="2" cellpadding="5">
+                            <p:calendar id="inline" class="calendario" value="#{calendarView.date1}" mode="inline" />
+                        </h:panelGrid>
+                    </h:form>
+                </div>
+            </div>
+
+
+        </div> 
+
+        <br/><br/><br/><br/>
+        <!--HASTA    AQUI-->
+
+        <!--PIE DE PAGINA-->
+        <nav class="pie navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">  
+                <ul class="nav navbar-nav navbar-center">
+                    <p align="center">
+                        <li> <font color="gray" ><strong><span class="glyphicons glyphicons-eye-open"></span>Copyright ©2018. Grupo Scout 39 Santo Angel - Málaga </strong> </font></li>
+                    </p>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="informacionlegal.xhtml"><span class="glyphicons glyphicons-eye-open"></span>Informacion Legal</a></li>
+                    <li><a href="mailto:grupo39santoangel@gmail.com" ><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--FIN-->
+
+    </h:body>
+</html>
+

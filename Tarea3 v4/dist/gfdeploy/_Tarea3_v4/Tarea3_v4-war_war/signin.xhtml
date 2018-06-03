@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:g="http://primefaces.org/ui"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <link rel="icon" href="../../../../favicon.ico"/>
+        <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/signing.css" rel="stylesheet"/>        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <h:outputScript library="primefaces" name="jquery/jquery.js" target="head"/>
+        <h:outputScript library="js" name= "bootstrap.js" target="head"/>
+        <h:outputScript library="js" name= "jquery-3.0.0.js" target="head"/>
+        <h:outputScript library="js" name= "popper.js" target="head"/>
+        <h:outputScript library="js" name= "jquery.js" target="head"/>
+        <title>Iniciar Sesion</title>
+    </h:head>
+    <h:body class="text-center">
+        
+        <!--BARRA DE NAVEGACIÓN-->
+       <nav class="navbar navbar-inverse navbar-static-top" role="Navigation">
+            <div>
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.xhtml">Grupo Scout 39</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="ListaEventos.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>Eventos</a></li>
+                            <li><a href="ASDE.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>ASDE</a></li>
+                            <li><a href="Colegio.xhtml"><span class="glyphicons glyphicons-tree-conifer"></span>Colegio</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicons glyphicons-group"></span>Sobre Nosotros <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Ubicacion.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>¿Dónde estamos?</a></li>
+                                    <li><a href="QuieresApuntarte.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>¿Quieres unirte?</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicons glyphicons-group"></span>Información <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="Uniformes.xhtml"><span class="glyphicons glyphicons-menu-hamburger"></span>Uniformes</a></li>
+                                    <li><a href="HacerMochila.xhtml"><span class="glyphicons glyphicons-menu-hamburger">Cómo hacer una mochila</span></a></li>
+                                     <li><a href="EquipamientoBasico.xhtml"><span class="glyphicons glyphicons-menu-hamburger">Equipamiento básico</span></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                         
+                    </div>
+                </nav>
+            </div>
+        </nav>
+        <!--FIN-->
+        
+        <!--A PARTIR DE AQUI-->
+        <div class="container">
+        <h:form class="form-signin" id="loginForm">
+            <g:growl class="text-center" id="messages" showDetail="true" life="1000"/>
+            <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"/>   
+            <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesion</h1>
+            <label for="inputEmail" class="sr-only">Usuario</label>
+            <h:inputText h:placeholder="Usuario" id="inputEmail" class="form-control" required="" value="#{login.usuario.usuario}"/>      
+            <label for="inputPassword" class="sr-only">Contrase&ntilde;a</label>
+            <h:inputSecret h:placeholder="Contraseña" id="inputPassword" class="form-control"  required="" value="#{login.usuario.contrasena}"/>
+            <div class="checkbox mb-3">
+                <label>
+                    <input type="checkbox" value="recordar contraseña"/> Recordar Contrase&ntilde;a
+                </label>
+            </div>
+            <h:commandButton class="btn btn-lg btn-primary btn-block" value="Autenticar" action="#{login.autenticar()}"/>
+            <ul class="pagination">
+                <li><a href="Registro.xhtml">&iquest;No estas registrado? Hazlo aqui</a></li>
+            </ul>
+        </h:form>
+    </div>
+        <!--HASTA    AQUI-->
+
+        <!--PIE DE PAGINA-->
+        <nav class="pie navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">  
+                 <ul class="nav navbar-nav navbar-center">
+                     <p align="center">
+                        <li> <font color="gray" ><strong><span class="glyphicons glyphicons-eye-open"></span>Copyright ©2018. Grupo Scout 39 Santo Angel - Málaga </strong> </font></li>
+                     </p>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="informacionlegal.xhtml"><span class="glyphicons glyphicons-eye-open"></span>Informacion Legal</a></li>
+                    <li><a href="mailto:grupo39santoangel@gmail.com" ><span class="glyphicon glyphicon-envelope"></span> Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--FIN-->
+    </h:body>
+
+</html>
